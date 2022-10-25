@@ -3,4 +3,6 @@ Note: This is a sample repo for the purposes of illustrating some basic automati
 
 This is a quick node project template for demoing Codespaces. It is based on the [Azure node sample](https://github.com/Azure-Samples/nodejs-docs-hello-world). It's great!!!
 
-You can start a codespace on this repository by clicking the [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=538751586) badge.
+I Have no idea what I am doing but having a blast working with GitHub
+
+This repo is to work with Git and Produce content for Module 1a JHub scheme
