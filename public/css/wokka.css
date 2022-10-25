@@ -1,0 +1,148 @@
+body {
+
+    font-family: 'Alkalami', serif;
+    background-color: #344e41de;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid yellowgreen;
+    padding: 5px 0 0;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: #899d63;
+    text-transform: uppercase;
+    text-align: center;
+    /* padding: 2em 0.05em 0 0.05em; */
+    font-weight: 400;
+    text-decoration: underline wavy midnightblue;
+    letter-spacing: 20px;
+}
+
+/*background: url(https://images.unsplash.com/photo-1562884621-13313a0bf36b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat center/110%; */
+
+h2 {
+    color: black;
+    font-weight: normal;
+    margin: 0.5em 0 0 0;
+    
+}
+
+h3 {
+    text-align: center;
+    font-family: ui-monospace;
+}
+
+#containerplay {
+    background-color: #12415a;
+    margin: 0 auto;
+    border: 7px inset #b3b293;
+    border-radius: 5%/25%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+}
+
+#containerplay div {
+    min-width: 150px;
+    text-align: center;
+    align-items: center;
+    margin: 2px;
+    border-radius: 5px;
+    flex-grow: 1;
+
+}
+
+section div:nth-of-type(1) {
+    flex-shrink: 2;
+    max-width: 60px;
+}
+
+section div:nth-of-type(6) {
+    flex-shrink: 2;
+    max-width: 50px;
+}
+
+main {
+    width: 75%;
+    height: 59px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: beige;
+    border: 2px white;
+    flex: 1 300px;
+
+}
+
+main .maincontent {
+    background-color: rgb(100, 135, 163);
+    border: 2px white;
+    flex: 1 450px;
+
+}
+
+@media (max-width: 450px) {
+    #containerplay {
+        width: auto;
+        justify-content: flex-start;
+    }
+    h2{text-align: center;}
+}
+
+ul {
+    font-size: small;
+}
+
+span {
+    display: inline-flex;
+    margin-left: 0em;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+button {
+    background: none;
+    background-color: darkslateblue;
+    border-radius: 9px;
+    padding: 0.5em .75em;
+    margin: 0.2em;
+    /* property name | duration | delay */
+    transition: all 0.3s 0.1s;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: azure;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0.2em 0.5em 0.53em -0.4em #f1ff5c;
+    transform: translate(-0.2em, -0.2em);
+    background-color: #327554;
+    cursor: pointer;
+}
+
+#neg {
+    /* transition: transform 2s 0.1s; */
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+div.LowSpan {
+    align-self: center;
+    /* width: fit-content; */
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+}
