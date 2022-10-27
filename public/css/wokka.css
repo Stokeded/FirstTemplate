@@ -160,35 +160,46 @@ h3 {
 }
 
 #containerplay {
+    display: flex;
+    justify-content: center;
+}
+
+#containerplay-boxes {
+    max-width: 85%;
     background-color: #12415a;
-    margin: 0 auto;
     border: 7px inset #b3b293;
     border-radius: 5%/25%;
     padding: 10px;
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
 }
 
-#containerplay div {
+#containerplay-boxes div {
     min-width: 150px;
+    /* max-width: 400px; */
     text-align: center;
     align-items: center;
     margin: 2px;
     border-radius: 5px;
-    flex-grow: 1;
+    flex-grow: 3;
 }
 
-section div:nth-of-type(1) {
+#containerplay-boxes div:nth-of-type(1) {
     flex-shrink: 2;
     max-width: 60px;
 }
 
-section div:nth-of-type(6) {
+#containerplay-boxes div:nth-of-type(6) {
     flex-shrink: 2;
     max-width: 50px;
+}
+
+#panel {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 80px;
 }
 
 .panel-project {
@@ -197,19 +208,23 @@ section div:nth-of-type(6) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+
     border-radius: 10px;
-    padding: 15px 25px;
-    width: 90%;
+    padding: 15px 20px;
+
     max-width: 600px;
     text-align: center;
     text-transform: uppercase;
 }
+
 .panel-img {
     max-width: 100%;
+    max-height: 350px;
 }
+
 .pricing-plan {
     border-bottom: 1px solid #c0dbf3;
+    padding: 10px;
 }
 
 .pricing-plan:last-child {
@@ -281,7 +296,33 @@ section div:nth-of-type(6) {
         text-align: center;
     }
 
-    @media (min) {}
+    @media (min-width: 900px) {
+        .panel-project {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+
+    .panel-project {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        max-width: 90%;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        padding: 15px 10px 25px;
+        border-right: 1px solid #c0dbf3;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+
+    h3:
 }
 
 ul {
