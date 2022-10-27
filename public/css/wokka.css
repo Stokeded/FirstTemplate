@@ -238,6 +238,7 @@ section div:nth-of-type(6) {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1px;
+    display: block;
 
 }
 
