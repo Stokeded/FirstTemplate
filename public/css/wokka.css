@@ -84,10 +84,9 @@ video {
     vertical-align: baseline;
 }
 
-ol,
+/* ol,
 ul {
-    /* list-style: none; */
-}
+    /* list-style: none; */ */
 
 blockquote,
 q {
